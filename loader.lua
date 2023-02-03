@@ -9,5 +9,5 @@ end)
 if bool == true then
   NotificationLibrary:SendNotification("Success", "Game supported", 4)
 else
-  NotificationLibrary:SendNotification("Error", "Game not supported", 4)  
+  NotificationLibrary:SendNotification("Error", "Game is not supported", 4)  
 end
