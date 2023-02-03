@@ -1,0 +1,3 @@
+for i,v in next, game:GetService("Players").LocalPlayer.ShopItems:GetDescendants() do
+    game:GetService("ReplicatedStorage"):WaitForChild("UpdateShop"):FireServer(-9e9,v.Name)
+end
