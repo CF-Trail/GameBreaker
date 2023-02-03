@@ -1,3 +1,5 @@
+print('debug')
+
 for i,v in next, workspace.Plots:GetDescendants() do
     game:GetService("ReplicatedStorage"):WaitForChild("Communication"):WaitForChild("UseMachine"):FireServer(v,false)
 end
