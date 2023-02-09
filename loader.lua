@@ -1,5 +1,5 @@
 local repo = 'https://raw.githubusercontent.com/CF-Trail/GameBreaker/main/games/'
-local gameRepo = 'https://raw.githubusercontent.com/CF-Trail/GameBreaker/main/games/gameIds'
+local gameRepo = 'https://raw.githubusercontent.com/CF-Trail/GameBreaker/main/games/gameIds/'
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
 local bool = false
 pcall(function()
