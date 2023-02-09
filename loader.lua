@@ -3,12 +3,16 @@ local gameRepo = 'https://raw.githubusercontent.com/CF-Trail/GameBreaker/main/ga
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
 local bool = false
 pcall(function()
-    loadstring(game:HttpGet(repo .. tostring(game.PlaceId)))()
+    task.spawn(function()
+       loadstring(game:HttpGet(repo .. tostring(game.PlaceId)))()
+    end)
     bool = true
 end)
 if bool == false then
   pcall(function()
-    loadstring(game:HttpGet(gameRepo .. tostring(game.GameId)))()
+    task.spawn(function()
+       loadstring(game:HttpGet(gameRepo .. tostring(game.GameId)))()
+    end)
     bool = true
   end)
 end
