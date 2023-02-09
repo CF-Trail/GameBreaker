@@ -8,7 +8,7 @@ pcall(function()
 end)
 if bool == false then
   pcall(function()
-    loadstring(game:HttpGet(gameRepo .. tostring(game.PlaceId)))()
+    loadstring(game:HttpGet(gameRepo .. tostring(game.GameId)))()
     bool = true
   end)
 end
